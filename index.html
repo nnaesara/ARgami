@@ -6,7 +6,9 @@
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
   </head>
   <body>
-    <a-scene mindar-image="imageTargetSrc: https://nnaesara.github.io/ARgami/assets/targets.mind;">
+    <a-scene mindar-image="imageTargetSrc: https://nnaesara.github.io/ARgami/assets/targets.mind;
+                        filterMinCF: 0.001;
+                        filterBeta: 0.001;">
       <a-assets>
         <img id="model1" src="https://nnaesara.github.io/ARgami/assets/1.jpg"/>
         <img id="model2" src="https://nnaesara.github.io/ARgami/assets/2.jpg"/>
@@ -134,9 +136,6 @@
         <a-plane src="#model26" position="0 0 0" height="1" width="1" rotation="0 0 0"></a-plane>
       </a-entity>
 
-      <a-scene mindar-image="imageTargetSrc: https://nnaesara.github.io/ARgami/assets/targets.mind;
-                        filterMinCF: 0.001;
-                        filterBeta: 0.001;">
 
     </a-scene>
   </body>
